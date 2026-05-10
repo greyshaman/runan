@@ -1,6 +1,6 @@
-# RuNeN - (Rust Neuromorphic Network)
+# RuNAN - (Rust Neuron Astrocyte Network)
 
-<center><img src="https://github.com/greyshaman/runen/raw/refs/heads/dev/images/neuro_mech_3d_l.webp" width="50%" alt="Runen Logo"></center>
+<center><img src="https://github.com/greyshaman/runan/raw/refs/heads/dev/images/neuro_mech_3d_l.webp" width="50%" alt="Runen Logo"></center>
 
 Цель этого проекта — создать модель, которая моделирует работу естественной нейронной сети, подобной той, что функционирует в человеческом мозгу. Есть потребность понять, как работает логика в таких нейронных сетях, и изучить различия между искусственными и естественными нейронными сетями в рамках модели. Модель может быть использованна для проверки математического подхода для сетей с нелинейным распространением сигнала.
 
