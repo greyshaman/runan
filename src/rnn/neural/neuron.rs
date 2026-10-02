@@ -325,7 +325,7 @@ impl Neuron {
                     let task_handler = w_core.receivers_task_tracker.spawn(async move {
                         let mut w_synapse = synapse.write().await;
                         while let Ok(signal) = w_synapse.recv().await {
-                            let write_me_into_log =
+                            let _write_me_into_log =
                                 Self::receive(&id_cloned, &core_cloned, signal, port).await;
                         }
                     });
