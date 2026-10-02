@@ -1,6 +1,6 @@
 use std::{sync::Arc, time::Duration};
 
-use librunen::rnn::{
+use librunan::rnn::{
     common::{input_cfg::InputCfg, status::Status},
     layouts::network::Network,
 };

@@ -1,6 +1,6 @@
 # RuNAN - (Rust Neuron Astrocyte Network)
 
-<center><img src="https://github.com/greyshaman/runan/raw/refs/heads/dev/images/neuro_mech_3d_l.webp" width="50%" alt="Runen Logo"></center>
+<center><img src="https://github.com/greyshaman/runan/raw/refs/heads/dev/images/neuro_mech_3d_l.webp" width="50%" alt="Runan Logo"></center>
 
 Цель этого проекта — создать модель, которая моделирует работу естественной нейронной сети, подобной той, что функционирует в человеческом мозгу. Есть потребность понять, как работает логика в таких нейронных сетях, и изучить различия между искусственными и естественными нейронными сетями в рамках модели. Модель может быть использованна для проверки математического подхода для сетей с нелинейным распространением сигнала.
 
@@ -79,7 +79,7 @@
 Нейросеть создаётся при помощи конструктора `Network::new()`:
 
 ```rust
-use librunen::rnn::layouts::network::Network;
+use librunan::rnn::layouts::network::Network;
 
 let net = Network::new().unwrap();
 ....
@@ -271,7 +271,7 @@ To use a neural network, before implementing the learning process, the network m
 A neural network is created using the `Network::new()` constructor:
 
 ```rust
-use librunen::rnn::layouts::network::Network;
+use librunan::rnn::layouts::network::Network;
 
 let net = Network::new().unwrap();
 ....

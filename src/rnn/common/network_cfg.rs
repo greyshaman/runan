@@ -2,7 +2,7 @@ use serde::{Deserialize, Serialize};
 
 use super::{
     input_cfg::InputCfg,
-    signal::{Signal, Weight},
+    signal::Weight,
 };
 
 #[derive(Debug, PartialEq, Eq, Serialize, Deserialize)]
