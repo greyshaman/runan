@@ -1,12 +1,11 @@
 [package]
-name = "runen"
-version = "0.2.0"
-edition = "2021"
+name = "runan"
+version = "0.3.0"
+edition = "2024"
 authors = ["Sergey Reshetnikov <shaman@simmirra.com>"]
 license = "MIT"
 
 [dependencies]
-cargo-xtask = "0.1"
 chrono = { version = "0.4", features = ["serde"] }
 regex = "1.11"
 serde = { version = "1.0", features = ["derive"] }
@@ -19,5 +18,5 @@ tracing = "0.1"
 tracing-subscriber = "0.3"
 
 [lib]
-name = "librunen"
+name = "librunan"
 path = "src/lib.rs"
