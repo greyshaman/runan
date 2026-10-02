@@ -112,7 +112,7 @@ impl Network {
 
         let net = gen_id_by_spec_type(
             "",
-            unsafe { ID_COUNTER.fetch_add(1, Ordering::Relaxed) },
+            ID_COUNTER.fetch_add(1, Ordering::Relaxed),
             &SpecificationType::Network,
         )
         .map(|id| Network {
@@ -319,7 +319,7 @@ impl Network {
         network_port: usize,
         neuron_id: &str,
         neuron_port: usize,
-    ) -> Result<(), Box<(dyn Error)>> {
+    ) -> Result<(), Box<dyn Error>> {
         use std::collections::btree_map::Entry;
 
         if let Some(neuron) = self.get_neuron(neuron_id).await {
@@ -451,6 +451,12 @@ impl Network {
         }));
     }
 }
+
+// impl Default for Network {
+//     fn default() -> Self {
+//         Self::new()
+//     }
+// }
 
 impl fmt::Display for Network {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
