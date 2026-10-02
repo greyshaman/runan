@@ -1,6 +1,6 @@
 use std::error::Error;
 
-/// Runen library errors
+/// Runan library errors
 #[derive(Debug)]
 pub enum RnnError {
     NeuronNotFound(String),
